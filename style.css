@@ -173,6 +173,11 @@ h1 {
     color: white;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     transform: scale(1.1);
+    z-index: 2;
+}
+
+.contact .contact-location:hover .contact-location-icon svg {
+    fill: #ffffff;
 }
 
 .contact .contact-email,
@@ -182,19 +187,22 @@ h1 {
 
 .contact .contact-location {
     cursor: default;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 0;
 }
 
 .contact-location-icon {
-    display: inline-flex;
-    align-items: center;
-    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: -0.2em;
+    margin-right: 0.35em;
+    pointer-events: none;
 }
 
 .contact-location-icon svg {
     display: block;
+    pointer-events: none;
 }
 
 section {
