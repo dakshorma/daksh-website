@@ -373,14 +373,16 @@ li {
 }
 
 .uni-logo {
-    width: 468px;
-    height: auto;
-    margin-bottom: 20px;
     display: block;
+    width: min(468px, 100%);
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
 }
 
 .dps-logo {
-    width: 150px;
+    width: min(150px, 100%);
+    max-width: 100%;
 }
 
 .dps-header {
@@ -496,6 +498,17 @@ footer {
 
     header.hero {
         padding: 60px 20px 50px;
+    }
+
+    .dps-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .dps-name {
+        font-size: 1.45em;
+        width: 100%;
     }
 
     .build-credit {
