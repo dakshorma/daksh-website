@@ -481,15 +481,50 @@ h4 {
     font-size: 1.1em;
 }
 
-.company a {
+.company-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem 0.85rem;
+    flex-wrap: wrap;
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-color: rgba(26, 26, 26, 0.35);
 }
 
-.company a:hover {
+.company-link:hover {
     text-decoration-color: #1a1a1a;
+}
+
+.company-logo {
+    flex-shrink: 0;
+    display: block;
+    height: 3.2375rem;
+    width: auto;
+    max-width: 14rem;
+    object-fit: contain;
+}
+
+.company-logo--amazon {
+    height: 2.835rem;
+    max-width: 10.9375rem;
+}
+
+.company-logo--orbis {
+    height: 3.115rem;
+    max-width: 19.25rem;
+}
+
+.company-logo--verity {
+    height: 4.1125rem;
+    width: auto;
+    max-width: 21rem;
+    border-radius: 7px;
+}
+
+.company-logo--ubc {
+    height: 4.4625rem;
+    max-width: 10.9375rem;
 }
 
 .date {
