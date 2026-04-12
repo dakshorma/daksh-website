@@ -302,7 +302,7 @@ h4 {
 .slider-window {
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 753px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -681,7 +681,7 @@ footer {
     }
 
     .slider-window {
-        height: 280px;
+        height: 503px;
     }
 
     .travel-slide {

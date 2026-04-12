@@ -153,7 +153,7 @@ const TRAVEL_SLIDES = [
     { src: 'Travel/fuji.jpg', city: 'Mount Fuji', country: 'Japan', flag: '🇯🇵' },
     { src: 'Travel/hongkong.jpg', city: 'Hong Kong', country: 'Hong Kong', flag: '🇭🇰' },
     { src: 'Travel/london.jpg', city: 'London', country: 'United Kingdom', flag: '🇬🇧' },
-    { src: 'Travel/malta.jpg', city: 'Malta', country: 'Malta', flag: '🇲🇹' },
+    { src: 'Travel/malta.jpg', city: 'Gozo', country: 'Malta', flag: '🇲🇹' },
     { src: 'Travel/milan.jpg', city: 'Milan', country: 'Italy', flag: '🇮🇹' },
     { src: 'Travel/nyc.jpg', city: 'New York City', country: 'United States', flag: '🇺🇸' },
     { src: 'Travel/paris.jpg', city: 'Paris', country: 'France', flag: '🇫🇷' },
