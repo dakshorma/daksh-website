@@ -413,6 +413,10 @@ section.education {
     max-width: 468px;
 }
 
+.school-header__logo--wide.school-header__logo--dps {
+    max-width: calc(468px * 0.9);
+}
+
 .education-quote {
     margin-top: 20px;
     padding: 20px;
