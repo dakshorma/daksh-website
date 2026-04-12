@@ -378,16 +378,14 @@ section.education {
 }
 
 /*
-  Education logos: one wide image (UBC), one compact image + title (DPS).
-  Wrapper (.school-header__logo) carries max-width so the <img> can use
-  width:100% inside a definite box—fixes iOS overflow vs % on the img alone.
+  UBC + DPS: same markup pattern. Logo wrapper sets max-width so the
+  <img> can use width:100% inside a definite box (better on narrow viewports).
 */
 .school-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem 1.25rem;
     margin: 0 auto 1.25rem;
     width: 100%;
     max-width: 100%;
@@ -413,20 +411,6 @@ section.education {
 .school-header__logo--wide {
     width: 100%;
     max-width: 468px;
-}
-
-.school-header__logo--compact {
-    width: min(150px, 42%);
-    max-width: 150px;
-}
-
-.school-header .dps-name {
-    flex: 1 1 200px;
-    min-width: 0;
-    margin: 0;
-    color: #006400;
-    font-size: 1.8em;
-    text-align: center;
 }
 
 .education-quote {
@@ -529,15 +513,6 @@ footer {
 
     header.hero {
         padding: 60px 20px 50px;
-    }
-
-    .school-header--with-title {
-        flex-direction: column;
-    }
-
-    .school-header .dps-name {
-        font-size: 1.45em;
-        width: 100%;
     }
 
     .build-credit {
