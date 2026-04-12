@@ -300,6 +300,14 @@ h4 {
     border-bottom-color: rgba(0, 0, 0, 0.45);
 }
 
+.about-references .education-quote--amazon p {
+    margin-bottom: 1.35em;
+}
+
+.about-references .education-quote--amazon p:last-of-type {
+    margin-bottom: 0.5em;
+}
+
 .about-personal {
     margin-top: 2.25rem;
     padding-top: 1.75rem;
