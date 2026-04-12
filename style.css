@@ -574,6 +574,19 @@ section.education {
     align-items: center;
 }
 
+.school-header__logo-link {
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.school-header__logo-link:focus-visible {
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
 .school-header__logo img {
     display: block;
     width: 100%;
@@ -626,18 +639,7 @@ section.education {
     margin-top: 5px;
 }
 
-.achievement a {
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 2px solid #000000;
-    transition: opacity 0.3s;
-}
-
-.achievement a:hover {
-    opacity: 0.6;
-}
-
-.scholarships {
+.education-panel {
     background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
@@ -645,12 +647,43 @@ section.education {
     border-left: 4px solid #000000;
 }
 
-.scholarships ul {
+.education-panel ul {
     margin-left: 20px;
 }
 
-.scholarships li {
+.education-panel li {
     margin-bottom: 15px;
+}
+
+.education-panel > p {
+    margin: 0 0 0.85em;
+    line-height: 1.65;
+    color: #333;
+}
+
+.education-panel > p:last-child {
+    margin-bottom: 0;
+}
+
+.education-panel .ubc-rankings-note {
+    margin: 0;
+    max-width: none;
+    font-size: 0.98em;
+    line-height: 1.65;
+    color: #444;
+    text-align: left;
+}
+
+.ubc-rankings-note a {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.ubc-rankings-note a:hover {
+    color: #333;
+    border-bottom-color: rgba(0, 0, 0, 0.45);
 }
 
 .video-container {
