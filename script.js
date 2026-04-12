@@ -129,7 +129,21 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+function revealScrollRevealsAlreadyInView() {
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    document.querySelectorAll('.scroll-reveal').forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < vh && rect.bottom > 0) {
+            el.classList.add('active');
+        }
+    });
+}
+
+document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
+// Hosted sites (HTTPS, deferred scripts, IO timing): ensure sections in the first viewport are visible even if the observer fires late.
+revealScrollRevealsAlreadyInView();
+requestAnimationFrame(() => revealScrollRevealsAlreadyInView());
+window.addEventListener('load', revealScrollRevealsAlreadyInView);
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
