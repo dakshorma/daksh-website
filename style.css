@@ -370,19 +370,28 @@ li {
 
 .degree {
     margin-bottom: 30px;
+    min-width: 0;
 }
 
-.uni-logo {
+section.education {
+    overflow-x: hidden;
+}
+
+/* Fill the education column on small screens; cap size on large screens */
+.education .uni-logo {
     display: block;
-    width: min(468px, 100%);
-    max-width: 100%;
+    width: 100%;
+    max-width: 468px;
     height: auto;
     margin: 0 auto 20px;
+    object-fit: contain;
 }
 
-.dps-logo {
-    width: min(150px, 100%);
-    max-width: 100%;
+.education .uni-logo.dps-logo {
+    width: auto;
+    max-width: min(150px, 100%);
+    margin: 0;
+    flex-shrink: 1;
 }
 
 .dps-header {
