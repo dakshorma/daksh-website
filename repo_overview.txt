@@ -1,0 +1,24 @@
+Repository: daksh-website
+Purpose: Single-page personal portfolio site (static HTML/CSS/JS) with animated background, scroll reveals, and a travel slideshow.
+
+Top-level files:
+- index.html: Main markup. Hero (build-credit note, profile, glitch title, tagline, contact chips including location with map pin). About Me (two lead paragraphs only). Experience: Amazon as one card (job--amazon) with linked employer (aws.amazon.com), overall tenure, scoped blocks (pills + amazon-scope-block) for Global Talent Management & Compensation, Payments & Fraud, and Both teams; single Amazon-wide Learnings paragraph; then Orbis (linked orbis.com/ca/institutional/home), Verity Studios (linked veritystudios.com), UBC TA (linked cs.ubc.ca). Each non-Amazon job uses accomplishment bullets plus a separate job-learnings callout (not a list item). References: dedicated section after Experience with blockquotes (Verity, UBC TA, Orbis, Amazon Forte excerpts) and Drive attributions. Education: UBC + DPS blocks unchanged in substance (logos, transcript/valedictorian pills, panels, Malcolm X quote). Skills & Strengths: three columns including Languages intro with star ratings. Beyond Work: own section before footer with travel copy and #beyond-work-slider. Footer. External links generally use target="_blank" and rel="noopener noreferrer" where appropriate.
+- style.css: Page gradient, white section cards, hero/contact, education panels and school-header logos, travel slider, scroll-reveal, Amazon scope UI (pills, scope blocks, team dates), job-team and job-learnings styling, .company link treatment, .beyond-work, responsive rules.
+- script.js: Canvas particle and floating emoji animation; IntersectionObserver for .scroll-reveal; smooth scroll for in-page anchors; travel slideshow (TRAVEL_SLIDES data, init for #beyond-work-slider).
+- CNAME: GitHub Pages custom domain pointer.
+- Daksh_2023_Resume.pdf: Resume asset.
+- .gitignore: Ignores .DS_Store.
+
+Folders:
+- Personal/: PROFILE.jpg (hero).
+- Education/: UBC.png, DPSN.png (school logos).
+
+Behavior summary:
+- Full-viewport canvas (#particles) with pointer-events disabled so content stays interactive.
+- Contact row uses shared stacking for hover chips; location chip matches interactive affordance of other contact items.
+- Scroll reveal: sections with .scroll-reveal get .active when intersecting (threshold ~0.15, rootMargin offset).
+- Travel slider: prev/next, dots, keyboard-friendly controls; slide data in script.js.
+
+Notes:
+- No build step; deploy as static files (e.g. GitHub Pages).
+- Amazon reference text is edited/condensed from Forte PDFs; attribution links to a public Google Drive folder.
