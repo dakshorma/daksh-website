@@ -377,34 +377,56 @@ section.education {
     overflow-x: hidden;
 }
 
-/* Fill the education column on small screens; cap size on large screens */
-.education .uni-logo {
+/*
+  Education logos: one wide image (UBC), one compact image + title (DPS).
+  Wrapper (.school-header__logo) carries max-width so the <img> can use
+  width:100% inside a definite box—fixes iOS overflow vs % on the img alone.
+*/
+.school-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1.25rem;
+    margin: 0 auto 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    text-align: center;
+}
+
+.school-header__logo {
+    flex: 0 1 auto;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-header__logo img {
     display: block;
     width: 100%;
-    max-width: 468px;
     height: auto;
-    margin: 0 auto 20px;
     object-fit: contain;
 }
 
-.education .uni-logo.dps-logo {
-    width: auto;
-    max-width: min(150px, 100%);
+.school-header__logo--wide {
+    width: 100%;
+    max-width: 468px;
+}
+
+.school-header__logo--compact {
+    width: min(150px, 42%);
+    max-width: 150px;
+}
+
+.school-header .dps-name {
+    flex: 1 1 200px;
+    min-width: 0;
     margin: 0;
-    flex-shrink: 1;
-}
-
-.dps-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
-
-.dps-name {
     color: #006400;
     font-size: 1.8em;
-    margin: 0;
+    text-align: center;
 }
 
 .education-quote {
@@ -509,13 +531,11 @@ footer {
         padding: 60px 20px 50px;
     }
 
-    .dps-header {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+    .school-header--with-title {
+        flex-direction: column;
     }
 
-    .dps-name {
+    .school-header .dps-name {
         font-size: 1.45em;
         width: 100%;
     }
