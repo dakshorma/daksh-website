@@ -156,7 +156,8 @@ h1 {
 
 .contact a,
 .contact .contact-email,
-.contact .contact-phone {
+.contact .contact-phone,
+.contact .contact-location {
     color: #000000;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -167,7 +168,8 @@ h1 {
 
 .contact a:hover,
 .contact .contact-email:hover,
-.contact .contact-phone:hover {
+.contact .contact-phone:hover,
+.contact .contact-location:hover {
     color: white;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
     transform: scale(1.1);
@@ -176,6 +178,23 @@ h1 {
 .contact .contact-email,
 .contact .contact-phone {
     cursor: text;
+}
+
+.contact .contact-location {
+    cursor: default;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.contact-location-icon {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contact-location-icon svg {
+    display: block;
 }
 
 section {
