@@ -54,56 +54,136 @@
     <section class="skills scroll-reveal">
         <h2>Skills & Strengths</h2>
         <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Core Strengths</h4>
-                <ul>
-                    <li>Mentorship</li>
-                    <li>Security & Reliability</li>
-                    <li>Solution Driven Design</li>
-                    <li>DevOps Automation</li>
-                    <li>Technical Deep Dive</li>
-                    <li>End-to-End Ownership</li>
-                    <li>Quality, Testing & Review Culture</li>
-                    <li>Technical Writing & Knowledge Sharing</li>
-                </ul>
+            <div class="skill-category skill-category--strengths">
+                <div class="skill-strength-block">
+                    <h4 class="skill-strength-block__title">Technical strengths</h4>
+                    <ul class="skill-strength-list">
+                        <li>Software and systems architecture</li>
+                        <li>Distributed systems, cloud infrastructure, and computer networking</li>
+                        <li>Production operations, reliability, security, and data integrity</li>
+                        <li>Database design and data modeling</li>
+                        <li>Generative AI, LLMs, and RAG</li>
+                        <li>Machine learning and computer vision</li>
+                        <li>CI/CD, pipeline tooling, and delivery automation</li>
+                        <li>Testing strategy, automation, and quality engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-strength-block">
+                    <h4 class="skill-strength-block__title">Non-technical strengths</h4>
+                    <ul class="skill-strength-list">
+                        <li>Partnership with product, design, operations, and research science</li>
+                        <li>Mentorship and technical coaching</li>
+                        <li>End to end ownership and delivery</li>
+                        <li>Requirements synthesis, tradeoffs, and planning</li>
+                        <li>Technical writing and async knowledge sharing</li>
+                        <li>Constructive code review and feedback</li>
+                    </ul>
+                </div>
             </div>
             <div class="skill-category skill-category--languages">
                 <h4>Languages</h4>
-                <p class="languages-intro">No language really intimidates me. I have studied the computer from assembly to the application layer, so something new is mostly a learning curve and not a wall. In real work, I stay flexible with language or infrastructure choices and pick what fits the problem best. When a tech stack feels dense I still bring Claude in like a sharp teammate. We read the tricky parts, decipher documentation, sketch on paper, and keep building together. The stars here reflect how much time I have actually spent building with each group.</p>
-                <div class="lang-ratings" role="list">
-                    <div class="lang-rating-row" role="listitem">
-                        <span class="lang-rating-row__name">Java / C / C++</span>
-                        <span class="lang-rating-row__meta">
-                            <span class="lang-stars" aria-label="5 out of 5 stars"><span class="lang-stars__filled">★★★★★</span></span>
-                            <span class="lang-rating-row__num">5/5</span>
-                        </span>
+                <p class="languages-intro">No language really intimidates me. I have studied the computer from assembly to the application layer, so something new is mostly a learning curve and not a wall. In real work, I stay flexible with language or infrastructure choices and pick what fits the problem best. When a tech stack feels dense I still bring Claude in like a sharp teammate. We read the tricky parts, decipher documentation, sketch on paper, and keep building together. The stars reflect how much time I have spent building with each group.</p>
+                <div class="lang-layers">
+                    <div class="lang-layer">
+                        <h5 class="lang-layer__title" id="lang-layer-native-managed">Native &amp; Managed</h5>
+                        <div class="lang-ratings" role="list" aria-labelledby="lang-layer-native-managed">
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">C / C++ / Java</span>
+                                <span class="lang-stars" aria-label="5 out of 5 stars"><span class="lang-stars__filled">★★★★★</span></span>
+                            </div>
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">C# / Kotlin / Rust / Go</span>
+                                <span class="lang-stars" aria-label="3 out of 5 stars"><span class="lang-stars__filled">★★★</span><span class="lang-stars__empty">☆☆</span></span>
+                            </div>
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">Swift / Scala</span>
+                                <span class="lang-stars" aria-label="2 out of 5 stars"><span class="lang-stars__filled">★★</span><span class="lang-stars__empty">☆☆☆</span></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lang-rating-row" role="listitem">
-                        <span class="lang-rating-row__name">C# / JavaScript / TypeScript / Python</span>
-                        <span class="lang-rating-row__meta">
-                            <span class="lang-stars" aria-label="4 out of 5 stars"><span class="lang-stars__filled">★★★★</span><span class="lang-stars__empty">☆</span></span>
-                            <span class="lang-rating-row__num">4/5</span>
-                        </span>
+                    <div class="lang-layer">
+                        <h5 class="lang-layer__title" id="lang-layer-app">Application &amp; Scripting</h5>
+                        <div class="lang-ratings" role="list" aria-labelledby="lang-layer-app">
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">Python / Bash / Ruby</span>
+                                <span class="lang-stars" aria-label="4 out of 5 stars"><span class="lang-stars__filled">★★★★</span><span class="lang-stars__empty">☆</span></span>
+                            </div>
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">PHP / Perl</span>
+                                <span class="lang-stars" aria-label="2 out of 5 stars"><span class="lang-stars__filled">★★</span><span class="lang-stars__empty">☆☆☆</span></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lang-rating-row" role="listitem">
-                        <span class="lang-rating-row__name">HTML / CSS / SQL</span>
-                        <span class="lang-rating-row__meta">
-                            <span class="lang-stars" aria-label="3 out of 5 stars"><span class="lang-stars__filled">★★★</span><span class="lang-stars__empty">☆☆</span></span>
-                            <span class="lang-rating-row__num">3/5</span>
-                        </span>
+                    <div class="lang-layer">
+                        <h5 class="lang-layer__title" id="lang-layer-web-data">Web &amp; Data</h5>
+                        <div class="lang-ratings" role="list" aria-labelledby="lang-layer-web-data">
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">JavaScript / TypeScript</span>
+                                <span class="lang-stars" aria-label="4 out of 5 stars"><span class="lang-stars__filled">★★★★</span><span class="lang-stars__empty">☆</span></span>
+                            </div>
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">HTML / CSS / SQL</span>
+                                <span class="lang-stars" aria-label="3 out of 5 stars"><span class="lang-stars__filled">★★★</span><span class="lang-stars__empty">☆☆</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lang-layer">
+                        <h5 class="lang-layer__title" id="lang-layer-machine-functional">Machine &amp; Functional</h5>
+                        <div class="lang-ratings" role="list" aria-labelledby="lang-layer-machine-functional">
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">Racket</span>
+                                <span class="lang-stars" aria-label="4 out of 5 stars"><span class="lang-stars__filled">★★★★</span><span class="lang-stars__empty">☆</span></span>
+                            </div>
+                            <div class="lang-rating-row" role="listitem">
+                                <span class="lang-rating-row__name">Assembly</span>
+                                <span class="lang-stars" aria-label="2 out of 5 stars"><span class="lang-stars__filled">★★</span><span class="lang-stars__empty">☆☆☆</span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="skill-category">
-                <h4>Expertise Areas</h4>
-                <ul>
-                    <li>Software Architecture Design</li>
-                    <li>Distributed Computing</li>
-                    <li>Operational & Data Integrity Excellence</li>
-                    <li>Database Design</li>
-                    <li>Generative AI, LLMs & RAG</li>
-                    <li>Machine Learning & Computer Vision</li>
-                </ul>
+            <div class="skill-category skill-category--technologies" aria-labelledby="technologies-heading">
+                <h4 id="technologies-heading">Technologies</h4>
+                <div class="tools-blocks">
+                    <div class="tools-block">
+                        <h5 class="tools-block__title">AI-Assisted Development</h5>
+                        <p class="tools-block__body">Amazon Q, Claude Code, Cursor, GitHub Copilot, OpenAI Codex</p>
+                    </div>
+                    <div class="tools-block tools-block--cloud-platforms">
+                        <h5 class="tools-block__title">Tools &amp; Frameworks</h5>
+                        <div class="tools-cloud-platforms">
+                            <div class="tools-cloud-platform">
+                                <h6 class="tools-cloud-platform__name">AI/ML</h6>
+                                <p class="tools-cloud-platform__body">LangFuse, LangGraph, LangChain, PyTorch, TensorFlow, GPT OSS, Gemini, Claude, Amazon Nova</p>
+                            </div>
+                            <div class="tools-cloud-platform">
+                                <h6 class="tools-cloud-platform__name">Backend</h6>
+                                <p class="tools-cloud-platform__body">Docker, Elasticsearch, FastAPI, Firebase, GraphQL, Jenkins, Jest, JUnit, Kubernetes, MongoDB, Node.js, PostgreSQL, PyTest, RabbitMQ, Redis, REST APIs, Terraform</p>
+                            </div>
+                            <div class="tools-cloud-platform">
+                                <h6 class="tools-cloud-platform__name">Frontend</h6>
+                                <p class="tools-cloud-platform__body">Angular, Next.js, React</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools-block tools-block--cloud-platforms">
+                        <h5 class="tools-block__title">Cloud Platforms</h5>
+                        <div class="tools-cloud-platforms">
+                            <div class="tools-cloud-platform tools-cloud-platform--wide">
+                                <h6 class="tools-cloud-platform__name">Amazon Web Services (AWS)</h6>
+                                <p class="tools-cloud-platform__body">API Gateway, Athena, Bedrock, Certificate Manager, CloudFormation, CloudFront, CloudTrail, CloudWatch, CodeDeploy, Cognito, Comprehend, DynamoDB, EC2, ECR, ECS, EFS, EKS, ElastiCache, ELB, EventBridge, Fargate, Glue, IAM, KMS, Lambda, RDS/Aurora, Route 53, S3, SageMaker, Secrets Manager, SES, SNS, SQS, Step Functions, VPC, WAF</p>
+                            </div>
+                            <div class="tools-cloud-platform">
+                                <h6 class="tools-cloud-platform__name">Google Cloud Platform (GCP)</h6>
+                                <p class="tools-cloud-platform__body">BigQuery, Compute Engine, Vertex AI</p>
+                            </div>
+                            <div class="tools-cloud-platform">
+                                <h6 class="tools-cloud-platform__name">Microsoft Azure</h6>
+                                <p class="tools-cloud-platform__body">AI Foundry</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -112,7 +192,7 @@
         <h2>Experience</h2>
         
         <div class="job job--amazon">
-            <h3>Software Engineer II [Internally Promoted]</h3>
+            <h3>Software Engineer II (Full-Stack) [Internally Promoted]</h3>
             <p class="company company--with-logo">
                 <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer" class="company-link">
                     <img src="Companies/amazon.svg" alt="" class="company-logo company-logo--amazon" width="72" height="22" decoding="async">
