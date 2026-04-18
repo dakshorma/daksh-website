@@ -6,7 +6,6 @@ Top-level files:
 - style.css: Page gradient, white section cards, hero/contact, education panels and school-header logos, travel slider, scroll-reveal, Amazon scope UI (pills, scope blocks, team dates), job-team and job-learnings styling, .company link treatment, .beyond-work, responsive rules.
 - script.js: Canvas particle and floating emoji animation; IntersectionObserver for .scroll-reveal; smooth scroll for in-page anchors; travel slideshow (TRAVEL_SLIDES data, init for #beyond-work-slider).
 - CNAME: GitHub Pages custom domain pointer.
-- Daksh_2023_Resume.pdf: Resume asset.
 - .gitignore: Ignores .DS_Store.
 
 Folders:
