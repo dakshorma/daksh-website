@@ -10,7 +10,7 @@ Top-level files:
 - .gitignore: Ignores .DS_Store.
 
 Folders:
-- Personal/: PROFILE.jpg (hero).
+- Personal/: headshot.jpg (hero).
 - Education/: UBC.png, DPSN.png (school logos).
 
 Behavior summary:
